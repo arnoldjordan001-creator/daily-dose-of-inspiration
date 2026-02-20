@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A unique motivational quote for each day of the year">
+    <title>Daily Motivational Quotes - 366 Days of Inspiration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily Motivation</h1>
+            <p class="tagline">366 Days of Inspiration</p>
+        </header>
+
+        <main class="quote-container">
+            <div class="date-display">
+                <div class="current-date" id="currentDate"></div>
+                <div class="day-of-year" id="dayOfYear"></div>
+            </div>
+
+            <div class="quote-card" id="quoteCard">
+                <svg class="quote-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 7C10 4.79086 8.20914 3 6 3C3.79086 3 2 4.79086 2 7C2 9.20914 3.79086 11 6 11C6.26522 11 6.52478 10.9762 6.77735 10.9307C6.92136 10.9032 7.02083 11.0339 6.97064 11.1702C6.39888 12.6986 4.98955 14.6519 2 17V19H10V17C10 13.5 10 11 10 7Z" fill="currentColor"/>
+                    <path d="M22 7C22 4.79086 20.2091 3 18 3C15.7909 3 14 4.79086 14 7C14 9.20914 15.7909 11 18 11C18.2652 11 18.5248 10.9762 18.7774 10.9307C18.9214 10.9032 19.0208 11.0339 18.9706 11.1702C18.3989 12.6986 16.9896 14.6519 14 17V19H22V17C22 13.5 22 11 22 7Z" fill="currentColor"/>
+                </svg>
+                
+                <blockquote class="quote-text" id="quoteText"></blockquote>
+                <p class="quote-author" id="quoteAuthor"></p>
+            </div>
+
+            <div class="controls">
+                <button class="btn btn-secondary" id="prevDayBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Previous Day
+                </button>
+                <button class="btn btn-primary" id="todayBtn">Today</button>
+                <button class="btn btn-secondary" id="nextDayBtn">
+                    Next Day
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="leap-year-indicator" id="leapYearIndicator"></div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Daily Motivation. All quotes are in the public domain or attributed to their authors.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
